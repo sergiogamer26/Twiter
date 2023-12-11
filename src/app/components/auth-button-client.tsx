@@ -11,7 +11,7 @@ export function AuthButton ({ session }: {session:Session | null}) {
     await supabase.auth.signInWithOAuth({
     provider: 'github',    
         options: {
-        redirectTo: 'https://twitter-umber-xi.vercel.app/auth/callback'
+        redirectTo: 'http://localhost:3000/auth/callback'
         }
 })
     }
